@@ -6,10 +6,11 @@
     <title>Kirill Pashnin | Portfolio</title>
     <link href="modernreset.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <header>
-      <img src="assets/logo.png"alt="logo">
+      <a href="#"><code class="highlight">&lt;/&gt;</code></a>
       <nav>
         <ul>
           <li><a href="#projects">Projects</a></li>
@@ -23,7 +24,7 @@
         <h1>Hi, I'm <span class="highlight">Kirill Pashnin</span></h1>
         <p>Full-stack web developer and cybersecurity enthusiast.</p>
         <div class="buttons">
-          <a href="https://github.com/ImShad0w" class="buttons">
+          <a href="https://github.com/ImShad0w" class="button">
             Github 
           </a>
           <button>Projects</button>
@@ -34,28 +35,54 @@
       <div class="projects-container">
         <div class="project-card">
           <h1>Journalism Race!</h1>
-          <p class="project-description">A real-time multiplayer typing game where players compete to type articles quickly and accurately. Features include lobbies, a leaderboard, player stats, and dynamic difficulty levels. Built with Vue, Pinia, Vite, Express, Socket.IO, and MySQL, and deployed using Docker. I was responsible for deployment, managing pull requests, and coordinating team contributions.</p>
-          <div class="tech-icons">
-
+          <p class="project-description">A <span class="highlight">multiplayer</span> typing game featuring <span class="highlight"> real-time races</span>, dynamic difficulty, player statistics, lobby creation, and an interactive podium system. Built as a team project where I handled <span class="highlight">deployment workflows</span>, code reviews, and maintaining consistent development standards.</p>
+          <div class="tech-stack">
+            <div class="tech-div">Vue</div>
+            <div class="tech-div">Express.js</div>
+            <div class="tech-div">MySQL</div>
+            <div class="tech-div">Socket.IO</div>
+            <div class="tech-div">Docker</div>
+            <div class="tech-div">Git</div>
           </div>
           <div class="project-buttons">
-            <button>Demo</button>
-            <button>Github</button>
+            <button>View live</button>
+            <button>View code</button>
           </div>
         </div>
-    <div class="project-card">
-              <h1>A bunch of questions</h1>
-              <p class="project-description">A browser-based quiz game that lets users create, edit, and answer questions stored in a database. Implements CRUD functionality, PHP backend, session management, and dynamic question fetching using JavaScript and Fetch API. Built to provide an interactive learning experience with persistent data handling.</p>
-              <div class="tech-icons">
-              </div>
+       <div class="project-card">
+          <h1>A bunch of questions</h1>
+          <p class="project-description">A browser-based quiz platform with question creation, editing, and play modes. Includes full <span class="highlight">CRUD</span> functionality, <span class="highlight">user session </span>handling, and database-driven content to deliver an interactive learning experience.</p>
+          <div class="tech-stack">
+            <div class="tech-div">HTML</div>
+            <div class="tech-div">CSS</div>
+            <div class="tech-div">JavaScript</div>
+            <div class="tech-div">PHP</div>
+            <div class="tech-div">MySQL</div>
+          </div>
           <div class="project-buttons">
-            <button>Demo</button>
-            <button>Github</button>
+            <button>View Code</button>
           </div>
         </div>
       </div>
       </section>
+      <section id="about" class="about-section">
+        <h1>About Me</h1>
+        <div class="about-text">
+          <p>I’m a <span class="highlight">web development student</span> who loves digging into how things work, especially when it comes to <span class="highlight">cybersecurity and engineering</span>. I spend a lot of time experimenting with new tech, studying what interests me, and training in my free time. My long-term goal is to become a versatile engineer—maybe even get into <span class="highlight">DevSecOps</span>—while staying hands-on with security and problem-solving along the way.</p>
+        </div>
+      </section>
+      <section id="contact" class="contact-section">
+        <h1>Contact Me</h1>
+        <div class="contact-form">
+          <p>If you’d like to reach out, collaborate, or just talk tech, feel free to message me. I’m always open to connecting with new people and exploring new ideas.</p>
+          <a href="mailto:kirillpashnin.dev@gmail.com">
+           <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <p>Made with love by <span class="highlight">ImShad0w</span></p>
+    </footer>
   </body>
 </html>

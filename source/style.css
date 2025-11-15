@@ -23,12 +23,26 @@ header{
   padding: 10px 30px;
 }
 
+header > a:link{
+  text-decoration: none;
+}
+
 header > nav > ul{
   display: flex;
   gap: 2rem;
   list-style-type: none;
   font-family: var(--main-font), "sans-serif";
 }
+
+header > nav > ul > li > a:link{
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+header > nav > ul > li > a:visited{
+  color: var(--text-color);
+}
+
 
 main{
   display: flex;
@@ -41,26 +55,45 @@ main{
   font-size: 2rem;
 }
 .hero-section > h1{
-  font-family: var(--main-font);
+  font-family: var(--main-font), "sans-serif";
   text-align: center;
   font-weight: bold;
 }
 
 .highlight{
   color: var(--highlight-color);
-  font-family: var(--highlight-text);
+  font-family: var(--highlight-text), "sans-serif";
 }
 
 .hero-section > p{
   color: var(--subtext-color);
-  font-family: var(--main-font);
+  font-family: var(--main-font), "sans-serif";
 }
 
 .hero-section > .buttons{
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  margin-top: 20px;
+  gap: 4rem;
+  margin-top: 5vh;
+}
+
+.hero-section > .buttons > .button{
+  color: var(--text-color);
+  text-decoration: none;
+  background-color: var(--highlight-color);
+  padding: 0.2em 0.7em;
+  border-radius: 10px;
+  font-family: var(--main-font);
+  color: black;
+}
+
+.hero-section > .buttons > button{
+  background-color: var(--highlight-color);
+  padding: 0.2em 0.7em;
+  border-radius: 10px;
+  border: none;
+  color: black;
+  font-family: var(--main-font);
 }
 
 #projects{
@@ -71,7 +104,7 @@ main{
 }
 #projects > h2{
   font-size: 3rem;
-  font-family: var(--main-font);
+  font-family: var(--main-font), "sans-serif";
 }
 
 #projects > .projects-container{
@@ -86,6 +119,101 @@ main{
   padding: 1.5rem;
   border-radius: 0.5rem;
   background-color: #1a1a1a; /* optional subtle card background */
-  transition: all 0.2s;
+}
+
+.project-card > h1 {
   text-align: center;
+  font-family: var(--main-font);
+}
+
+.project-card > .project-description{
+  margin-top: 1em;
+  color: var(--subtext-color);
+  font-size: 1.5em;
+  font-family: var(--main-font);
+}
+.project-card > .tech-stack{
+  display: flex;
+  gap: 1em;
+  margin-top: 3vh;
+}
+
+.project-card > .tech-stack > .tech-div{
+background-color: #2a2a2a;
+  color: var(--subtext-color);
+  padding: 5px;
+  border-radius: 10px;
+  font-family: var(--main-font);
+}
+
+.project-card > .project-buttons{
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.project-buttons > button{
+  background-color: var(--highlight-color);
+  border: none;
+  padding: 0.2em 0.7em;
+  font-size: 1.5em;
+  font-family: var(--main-font);
+  border-radius: 10px;
+}
+#about{
+  margin-top: 40vh;
+  max-width: 800px;
+}
+
+#about > h1{
+  font-size: 3rem;
+  font-family: var(--main-font), "sans-serif";
+  text-align: center;
+}
+
+#about > .about-text{
+ margin-top: 8vh;
+  font-size: 2em;
+  font-family: var(--main-font), "sans-serif";
+  background-color: #1a1a1a; /* optional subtle card background */
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+#contact{
+  margin-top: 35vh;
+}
+
+#contact > h1{
+  font-size: 3rem;
+  font-family: var(--main-font), "sans-serif";
+  text-align: center;
+}
+
+#contact > .contact-form{
+  font-size: 2rem;
+  font-family: var(--main-font), "sans-serif";
+  max-width: 800px;
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1a1a1a; /* optional subtle card background */
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.contact-form > a{
+  font-size: 3rem;
+  color: var(--highlight-color);
+  margin-top: 1em;
+}
+
+footer{
+  margin-top: 20vh;
+  display: flex;
+  justify-content: center;
+  font-family: var(--main-font);
+  font-size: 1.5em;
 }
